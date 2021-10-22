@@ -28,7 +28,9 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
 }
 
