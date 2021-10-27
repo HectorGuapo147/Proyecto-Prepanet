@@ -11,6 +11,8 @@ class ViewControllerVistaInicial: UIViewController {
     
     @IBOutlet weak var btTalleres: UIButton!
     @IBOutlet weak var btPerfil: UIButton!
+    @IBOutlet weak var btAlumnos: UIButton!
+    @IBOutlet weak var btArchivo: UIButton!
     
     
     override func viewDidLoad() {
@@ -18,6 +20,8 @@ class ViewControllerVistaInicial: UIViewController {
 
         btTalleres.layer.cornerRadius = 40
         btPerfil.layer.cornerRadius = 40
+        btAlumnos.layer.cornerRadius = 40
+        btArchivo.layer.cornerRadius = 40
         
     }
     
@@ -28,6 +32,11 @@ class ViewControllerVistaInicial: UIViewController {
     @IBAction func Perfil(_ sender: UIButton) {
     }
     
+    @IBAction func RevisaAlumnos(_ sender: UIButton) {
+    }
+    
+    @IBAction func ObtenArchivo(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

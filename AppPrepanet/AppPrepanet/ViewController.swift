@@ -29,6 +29,11 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let user = tfUsuario.text,
+           let pass = tfPassword.text{
+            let vistaIni = segue.destination as! ViewControllerVistaInicial
+            
+        }
         
     }
     
