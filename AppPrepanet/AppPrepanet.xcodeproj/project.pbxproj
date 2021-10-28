@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF523767272A457D00FAE261 /* ViewControllerAlumnos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF523766272A457D00FAE261 /* ViewControllerAlumnos.swift */; };
+		AF761DF3272AE36100958AAB /* TableViewControllerAWorkshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF761DF2272AE36100958AAB /* TableViewControllerAWorkshop.swift */; };
+		AF761DF6272AE3C500958AAB /* TableViewWorkshopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF761DF5272AE3C500958AAB /* TableViewWorkshopCell.swift */; };
+		AF761DF9272AE8A500958AAB /* ViewControllerPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF761DF8272AE8A500958AAB /* ViewControllerPerfil.swift */; };
 		FB7EC61F2722FD020028F1C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7EC61E2722FD020028F1C7 /* AppDelegate.swift */; };
 		FB7EC6212722FD020028F1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7EC6202722FD020028F1C7 /* SceneDelegate.swift */; };
 		FB7EC6232722FD020028F1C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7EC6222722FD020028F1C7 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF523766272A457D00FAE261 /* ViewControllerAlumnos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAlumnos.swift; sourceTree = "<group>"; };
+		AF761DF2272AE36100958AAB /* TableViewControllerAWorkshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerAWorkshop.swift; sourceTree = "<group>"; };
+		AF761DF5272AE3C500958AAB /* TableViewWorkshopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWorkshopCell.swift; sourceTree = "<group>"; };
+		AF761DF8272AE8A500958AAB /* ViewControllerPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPerfil.swift; sourceTree = "<group>"; };
 		FB7EC61B2722FD020028F1C7 /* AppPrepanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPrepanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7EC61E2722FD020028F1C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7EC6202722FD020028F1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 				FB7EC6202722FD020028F1C7 /* SceneDelegate.swift */,
 				FB7EC6222722FD020028F1C7 /* ViewController.swift */,
 				FB7EC6242722FD020028F1C7 /* Main.storyboard */,
+				AF761DF8272AE8A500958AAB /* ViewControllerPerfil.swift */,
+				AF761DF5272AE3C500958AAB /* TableViewWorkshopCell.swift */,
+				AF761DF2272AE36100958AAB /* TableViewControllerAWorkshop.swift */,
+				AF523766272A457D00FAE261 /* ViewControllerAlumnos.swift */,
 				FB7EC65927232D590028F1C7 /* TableViewControllerTalleres.swift */,
 				FB7EC655272322D00028F1C7 /* ViewControllerVistaInicial.swift */,
 				FB7EC6272722FD040028F1C7 /* Assets.xcassets */,
@@ -143,10 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF761DF3272AE36100958AAB /* TableViewControllerAWorkshop.swift in Sources */,
 				FB7EC656272322D00028F1C7 /* ViewControllerVistaInicial.swift in Sources */,
+				AF761DF9272AE8A500958AAB /* ViewControllerPerfil.swift in Sources */,
 				FB7EC6232722FD020028F1C7 /* ViewController.swift in Sources */,
 				FB7EC65A27232D590028F1C7 /* TableViewControllerTalleres.swift in Sources */,
 				FB7EC61F2722FD020028F1C7 /* AppDelegate.swift in Sources */,
+				AF523767272A457D00FAE261 /* ViewControllerAlumnos.swift in Sources */,
+				AF761DF6272AE3C500958AAB /* TableViewWorkshopCell.swift in Sources */,
 				FB7EC6212722FD020028F1C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

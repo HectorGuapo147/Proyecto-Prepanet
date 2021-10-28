@@ -8,15 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var btEntrar: UIButton!
-    @IBOutlet weak var tfUsuario: UITextField!
-    @IBOutlet weak var tfPassword: UITextField!
     
+    // tfUsuario
+    // tfPassword
+    // btEntrar
+    
+    @IBOutlet weak var tfUser: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var btSignIn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        btEntrar.layer.cornerRadius = 15
+        btSignIn.layer.cornerRadius = 15
         
         //poner el tap por programa
         let tap = UITapGestureRecognizer(target: self, action: #selector(quitaTeclado))
@@ -29,10 +32,9 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let user = tfUsuario.text,
+        if let user = tfUser.text,
            let pass = tfPassword.text{
-            let vistaIni = segue.destination as! ViewControllerVistaInicial
-            
+            let vistaIni = segue.destination as! ViewControllerAlumnos
         }
         
     }
