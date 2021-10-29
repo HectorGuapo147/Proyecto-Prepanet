@@ -206,19 +206,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-z8-6Fe">
-                                <rect key="frame" x="48" y="449" width="280" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.085370726879999997" green="0.36155849699999998" blue="0.74514013530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Mi perfil">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Perfil:" destination="j6w-AS-ndG" eventType="touchUpInside" id="hA6-8G-b3k"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63B-YX-Fku">
-                                <rect key="frame" x="47" y="339" width="280" height="80"/>
+                                <rect key="frame" x="47" y="350" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.085370726879999997" green="0.36155849699999998" blue="0.74514013530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Alumnos">
@@ -228,19 +217,6 @@
                                     <action selector="Perfil:" destination="j6w-AS-ndG" eventType="touchUpInside" id="48l-5S-exZ"/>
                                     <action selector="Reporte:" destination="j6w-AS-ndG" eventType="touchUpInside" id="qJ8-Jd-dRW"/>
                                     <action selector="RevisaAlumnos:" destination="j6w-AS-ndG" eventType="touchUpInside" id="m8Z-gg-sZv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-WT-fZF">
-                                <rect key="frame" x="48" y="449" width="280" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.085370726879999997" green="0.36155849699999998" blue="0.74514013530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Archivo">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="ObtenArchivo:" destination="j6w-AS-ndG" eventType="touchUpInside" id="UJO-Wd-l4y"/>
-                                    <action selector="Perfil:" destination="j6w-AS-ndG" eventType="touchUpInside" id="Z1l-RU-0GO"/>
-                                    <action selector="Reporte:" destination="j6w-AS-ndG" eventType="touchUpInside" id="yfd-fH-Icn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A0XXXXXXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D2-lI-0Bb">
@@ -262,7 +238,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-4l-UUI">
-                                <rect key="frame" x="48" y="202" width="280" height="80"/>
+                                <rect key="frame" x="47" y="217" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.085370726879999997" green="0.36155849699999998" blue="0.74514013530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Talleres">
@@ -271,6 +247,19 @@
                                 <connections>
                                     <action selector="Talleres:" destination="j6w-AS-ndG" eventType="touchUpInside" id="S2j-ry-Q6A"/>
                                     <segue destination="7TX-32-4IS" kind="presentation" identifier="talleres" animates="NO" modalPresentationStyle="fullScreen" id="op3-KB-F9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-WT-fZF">
+                                <rect key="frame" x="47" y="483" width="280" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.085370726879999997" green="0.36155849699999998" blue="0.74514013530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Archivo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ObtenArchivo:" destination="j6w-AS-ndG" eventType="touchUpInside" id="UJO-Wd-l4y"/>
+                                    <action selector="Perfil:" destination="j6w-AS-ndG" eventType="touchUpInside" id="Z1l-RU-0GO"/>
+                                    <action selector="Reporte:" destination="j6w-AS-ndG" eventType="touchUpInside" id="yfd-fH-Icn"/>
                                 </connections>
                             </button>
                         </subviews>
