@@ -8,21 +8,24 @@
 import UIKit
 
 class TableViewControllerAWorkshop: UITableViewController {
-    
+    /*
     struct workshops{
-        let title: String
-        let description: String
-        
-        init(title: String, description: String) {
-            self.title = title
-            self.description = description
-        }
-    }
-    
-    let workshopArr : [workshops] = [
-        workshops(title: "prueba", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"),
-        workshops(title: "prueba", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"),
-        workshops(title: "prueba", description: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum")
+           let title: String
+           let description: String
+           
+           init(title: String, description: String) {
+               self.title = title
+               self.description = description
+           }
+       }
+ */
+   
+    var lorem : String = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    let workshopArr : [Workshop] = [
+        Workshop(title: "prueba1", descr: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"),
+        Workshop(title: "prueba2", descr: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"),
+        Workshop(title: "prueba3", descr: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"),
+        Workshop(title: "prueba4", descr: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum")
     ]
     
     
@@ -53,7 +56,7 @@ class TableViewControllerAWorkshop: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewWorkshopCell
         let workshop = workshopArr[indexPath.row]
         cell.lbTitle.text = workshop.title
-        cell.lbDescription.text = workshop.description
+        cell.lbDescription.text = workshop.descr
         return cell
     }
     
@@ -93,14 +96,19 @@ class TableViewControllerAWorkshop: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vistaWorkshop = segue.destination as! ViewControllerWorkshop
+        
+        
+        let index = tableView.indexPathForSelectedRow!
+        vistaWorkshop.workshop = workshopArr[index.row]
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

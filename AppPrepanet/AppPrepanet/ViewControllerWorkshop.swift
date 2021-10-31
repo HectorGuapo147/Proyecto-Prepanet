@@ -9,9 +9,16 @@ import UIKit
 
 class ViewControllerWorkshop: UIViewController {
 
+    @IBOutlet weak var lbTitle: UILabel!
+    @IBOutlet weak var lbAbout: UILabel!
+    @IBOutlet weak var lbReq: UILabel!
+    
+    var workshop : Workshop!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lbTitle.text = workshop.title
+        lbAbout.text = workshop.descr
         // Do any additional setup after loading the view.
     }
     
